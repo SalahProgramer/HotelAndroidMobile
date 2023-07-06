@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LLstyle"
+    android:background="@drawable/hotel"
+    tools:context=".HomeActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/SVstyle"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/backtextview">
+
+            <Button
+                android:id="@+id/homeActivity_btn_reservedRoom"
+                style="@style/Bstyle"
+                android:background="@drawable/backbtn"
+                android:fontFamily="@font/abhaya_libre"
+                android:onClick="reservedActivity"
+                android:padding="10dp"
+                android:text="@string/my_rooms"
+                android:textStyle="bold"
+                app:cornerRadius="90dp" />
+
+            <Button
+                android:id="@+id/homeActivity_btn_rooms"
+                style="@style/Bstyle"
+                android:background="@drawable/backbtn"
+                android:fontFamily="@font/abhaya_libre"
+                android:onClick="RoomsActivity"
+                android:padding="10dp"
+                android:text="@string/rooms_reserve"
+                android:textStyle="bold"
+                app:cornerRadius="90dp" />
+
+            <Button
+                android:id="@+id/homeActivity_btn_hotelInformation"
+                style="@style/Bstyle"
+                android:background="@drawable/backbtn"
+                android:fontFamily="@font/abhaya_libre"
+                android:onClick="HotelActivity"
+                android:padding="10dp"
+                android:text="@string/hotel_information_title"
+                android:textStyle="bold"
+                app:cornerRadius="90dp" />
+
+            <Button
+                android:id="@+id/homeActivity_btn_customerProfile"
+                style="@style/Bstyle"
+                android:background="@drawable/backbtn"
+                android:fontFamily="@font/abhaya_libre"
+                android:onClick="CustomerActivity"
+                android:padding="10dp"
+                android:text="@string/customer_profile"
+                android:textStyle="bold"
+                app:cornerRadius="90dp" />
+
+            <Button
+                android:id="@+id/homeActivity_btn_touristAreas"
+                style="@style/Bstyle"
+                android:background="@drawable/backbtn"
+                android:fontFamily="@font/abhaya_libre"
+                android:onClick="CurrencyConverter"
+                android:padding="10dp"
+                android:text="@string/currency_converter"
+                android:textStyle="bold"
+                app:cornerRadius="90dp" />
+
+            <Button
+                android:id="@+id/homeActivity_btn_fav"
+                style="@style/Bstyle"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/backbtn"
+                android:onClick="FavoriteActivity"
+                android:padding="10dp"
+                android:text="@string/favorites"
+                app:cornerRadius="90dp"
+                android:fontFamily="@font/abhaya_libre"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

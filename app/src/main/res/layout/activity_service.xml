@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LLstyle"
+    android:background="@drawable/hotel"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:layout_gravity="center"
+    tools:context=".ServiceActivity">
+
+    <Spinner
+        android:id="@+id/serviceActivity_sp_orderType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner"
+        android:entries="@array/order_types"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/serviceActivity_tv_orderDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852" />
+
+    <EditText
+        android:id="@+id/serviceActivity_tv_orderDescription"
+        android:layout_width="342dp"
+        android:layout_height="205dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/backtextview"
+        android:ems="10"
+        android:fontFamily="@font/abhaya_libre"
+        android:gravity="start"
+        android:hint="@string/order_description"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/serviceActivity_btn_sentOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/serviceActivity_btn_sentOrder"
+        style="@style/Bstyle"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/backbtn"
+        android:drawableLeft="@drawable/baseline_send_24"
+        android:fontFamily="@font/abhaya_libre"
+        android:gravity="center"
+        android:onClick="SentOrder"
+        android:padding="20dp"
+        android:text="@string/sent"
+        android:textStyle="bold"
+        app:cornerRadius="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

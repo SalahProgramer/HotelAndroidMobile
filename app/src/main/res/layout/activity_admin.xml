@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LLstyle"
+    android:background="@drawable/hotel"
+    tools:context=".AdminActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/SVstyle"
+            android:background="@drawable/backtextview">
+
+            <Button
+                android:id="@+id/adminActivity_btn_suite"
+                style="@style/Bstyle"
+                android:background="@drawable/backbtn"
+                android:fontFamily="@font/abhaya_libre"
+                android:onClick="SuiteRoom"
+                android:text="Suite"
+                android:textStyle="bold"
+                app:cornerRadius="90dp" />
+
+            <Button
+                android:id="@+id/adminActivity_btn_receptionistView"
+                style="@style/Bstyle"
+                android:background="@drawable/backbtn"
+                android:fontFamily="@font/abhaya_libre"
+                android:onClick="receptionistView"
+                android:text="Receptionist View"
+                android:textStyle="bold"
+                app:cornerRadius="90dp" />
+
+            <Button
+                android:id="@+id/adminActivity_btn_room"
+                style="@style/Bstyle"
+                android:background="@drawable/backbtn"
+                android:fontFamily="@font/abhaya_libre"
+                android:onClick="NormalRoom"
+                android:text="Room"
+                android:textStyle="bold"
+                app:cornerRadius="90dp" />
+
+            <Button
+                android:id="@+id/adminActivity_btn_signupEmployee"
+                style="@style/Bstyle"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/backbtn"
+                android:fontFamily="@font/abhaya_libre"
+                android:onClick="SignUpEmployee"
+                android:text="Signup Employee"
+                android:textStyle="bold"
+                app:cornerRadius="90dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

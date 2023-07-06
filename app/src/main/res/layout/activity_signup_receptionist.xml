@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LLstyle"
+    android:background="@drawable/hotel"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingRight="10dp"
+    tools:context=".SignupReceptionistActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="30dp"
+        tools:context=".SignupReceptionistActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signupReceptionistActivity_tv_name"
+                style="@style/LOGTVstyle"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/signupReceptionistActivity_et_name"
+                style="@style/LOGETstyle"
+                android:background="@drawable/backtextview"
+                android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+                android:fontFamily="@font/abhaya_libre"
+                android:hint="Enter the name:"
+                android:inputType="textPersonName"
+                android:nextFocusDown="@+id/signupReceptionistActivity_et_Address"
+                android:padding="20dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signupReceptionistActivity_tv_Address"
+                style="@style/LOGTVstyle"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/signupReceptionistActivity_et_Address"
+                style="@style/LOGETstyle"
+                android:background="@drawable/backtextview"
+                android:drawableLeft="@drawable/baseline_add_home_work_24"
+                android:fontFamily="@font/abhaya_libre"
+                android:hint="Enter the address:"
+                android:inputType="textPersonName"
+                android:nextFocusDown="@+id/signupReceptionistActivity_et_phone"
+                android:padding="20dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signupReceptionistActivity_tv_phone"
+                style="@style/LOGTVstyle"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre"
+                android:text="@string/phone"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/signupReceptionistActivity_et_phone"
+                style="@style/LOGETstyle"
+                android:background="@drawable/backtextview"
+                android:drawableLeft="@drawable/baseline_local_phone_24"
+                android:fontFamily="@font/abhaya_libre"
+                android:hint="Enter the phone:"
+                android:inputType="phone"
+                android:nextFocusDown="@+id/signupReceptionistActivity_et_email"
+                android:padding="20dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signupReceptionistActivity_tv_email"
+                style="@style/LOGTVstyle"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre"
+                android:text="@string/email"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/signupReceptionistActivity_et_email"
+                style="@style/LOGETstyle"
+                android:background="@drawable/backtextview"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/abhaya_libre"
+                android:hint="@string/receptionist_com"
+                android:inputType="textPersonName"
+                android:nextFocusDown="@+id/signupReceptionistActivity_et_username"
+                android:padding="20dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signupReceptionistActivity_tv_username"
+                style="@style/LOGTVstyle"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre"
+                android:text="@string/username"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/signupReceptionistActivity_et_username"
+                style="@style/LOGETstyle"
+                android:background="@drawable/backtextview"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/abhaya_libre"
+                android:hint="@string/receptionist"
+                android:inputType="textPersonName"
+                android:nextFocusDown="@+id/signupReceptionistActivity_et_password"
+                android:padding="20dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signupReceptionistActivity_tv_password"
+                style="@style/LOGTVstyle"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/signupReceptionistActivity_et_password"
+                style="@style/LOGETstyle"
+                android:background="@drawable/backtextview"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/abhaya_libre"
+                android:hint="Enter the password:"
+                android:inputType="textPassword"
+                android:nextFocusDown="@+id/signupReceptionistActivity_et_repeatPassword"
+                android:padding="20dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signupReceptionistActivity_tv_repeatPassword"
+                style="@style/LOGTVstyle"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre"
+                android:text="@string/repeatPwd"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/signupReceptionistActivity_et_repeatPassword"
+                style="@style/LOGETstyle"
+                android:background="@drawable/backtextview"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/abhaya_libre"
+                android:hint="Enter the password:"
+                android:inputType="textPassword"
+                android:nextFocusDown="@+id/signupReceptionistActivity_et_salary"
+                android:padding="20dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signupReceptionistActivity_tv_salary"
+                style="@style/LOGTVstyle"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre"
+                android:text="@string/salary"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/signupReceptionistActivity_et_salary"
+                style="@style/LOGETstyle"
+                android:background="@drawable/backtextview"
+                android:drawableLeft="@drawable/baseline_point_of_sale_24"
+                android:fontFamily="@font/abhaya_libre"
+                android:hint="Enter the salary:"
+                android:inputType="number"
+                android:nextFocusDown="@+id/signupReceptionistActivity_et_hourWork"
+                android:padding="20dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signupReceptionistActivity_tv_hourWork"
+                style="@style/LOGTVstyle"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre"
+                android:text="@string/hour_work"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/signupReceptionistActivity_et_hourWork"
+                style="@style/LOGETstyle"
+                android:background="@drawable/backtextview"
+                android:drawableLeft="@drawable/baseline_hourglass_bottom_24"
+                android:fontFamily="@font/abhaya_libre"
+                android:hint="Enter the hour work:"
+                android:inputType="number"
+                android:nextFocusDown="@+id/signupReceptionistActivity_sp_service"
+                android:padding="20dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/signupReceptionistActivity_tv_service"
+                style="@style/LOGTVstyle"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre"
+                android:text="Service"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+            <!--    <EditText-->
+            <!--        android:id="@+id/signupReceptionistActivity_et_service"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:ems="10"-->
+            <!--        android:inputType="text" />-->
+
+            <Spinner
+                android:id="@+id/signupReceptionistActivity_sp_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner"
+                android:entries="@array/service_type"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+
+        <Button
+            style="@style/Bstyle"
+            android:background="@drawable/backbtn"
+            android:drawableLeft="@drawable/baseline_assignment_24"
+            android:onClick="login"
+            android:padding="20dp"
+            android:text="@string/signup"
+            app:cornerRadius="90dp" />
+
+        <ProgressBar
+            android:id="@+id/signupCustomerActivity_pb_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>
