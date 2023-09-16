@@ -51,13 +51,5 @@ public class AdminActivity extends AppCompatActivity {
         startActivity(normalIntent);
     }
 
-    public void SignUpEmployee(View view) {
-        Intent signupIntent = new Intent(this, SignupReceptionistActivity.class);
-        startActivity(signupIntent);
-    }
 
-    public void receptionistView(View view) {
-        Intent receptionistIntent = new Intent(this, ReceptionistsActivity.class);
-        startActivity(receptionistIntent);
-    }
 }

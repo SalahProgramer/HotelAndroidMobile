@@ -177,11 +177,6 @@ public class LoginActivity extends AppCompatActivity {
                                 Intent adminIntent = new Intent(getApplicationContext(), AdminActivity.class);
                                 startActivity(adminIntent);
 
-                            }else if(userType.equals("receptionist"))
-                            {
-                                Intent receptionistIntent = new Intent(getApplicationContext(), ReceptionistActivity.class);
-                                startActivity(receptionistIntent);
-
                             } else if(userType.equals("customer"))
                             {
                                 Intent homeIntent = new Intent(getApplicationContext(), HomeActivity.class);

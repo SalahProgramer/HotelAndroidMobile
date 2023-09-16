@@ -15,7 +15,8 @@
             style="@style/SVstyle"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="35dp"
-            android:background="@drawable/backtextview">
+            android:background="@drawable/backtextview"
+            android:paddingBottom="20dp">
 
             <Button
                 android:id="@+id/homeActivity_btn_reservedRoom"
@@ -61,28 +62,6 @@
                 android:textStyle="bold"
                 app:cornerRadius="90dp" />
 
-            <Button
-                android:id="@+id/homeActivity_btn_touristAreas"
-                style="@style/Bstyle"
-                android:background="@drawable/backbtn"
-                android:fontFamily="@font/abhaya_libre"
-                android:onClick="CurrencyConverter"
-                android:padding="10dp"
-                android:text="@string/currency_converter"
-                android:textStyle="bold"
-                app:cornerRadius="90dp" />
-
-            <Button
-                android:id="@+id/homeActivity_btn_fav"
-                style="@style/Bstyle"
-                android:layout_marginBottom="80dp"
-                android:background="@drawable/backbtn"
-                android:onClick="FavoriteActivity"
-                android:padding="10dp"
-                android:text="@string/favorites"
-                app:cornerRadius="90dp"
-                android:fontFamily="@font/abhaya_libre"
-                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 

@@ -29,10 +29,6 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(reservedIntent);
     }
 
-    public void FavoriteActivity(View view) {
-        Intent favoriteIntent = new Intent(this, FavoriteActivity.class);
-        startActivity(favoriteIntent);
-    }
 
     public void RoomsActivity(View view) {
         Intent roomsIntent = new Intent(this, ReserveTypeActivity.class);

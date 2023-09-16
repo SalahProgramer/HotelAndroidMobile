@@ -157,6 +157,12 @@ public class NormalRoomActivity extends AppCompatActivity {
                     normalRoomActivity_tv_dateEnd.setText(date);
                     endDate = LocalDate.of(year, month, day);;
                 }
+                if(startDate != null && endDate != null){
+                    long days = daysBetween();
+                    TOTAL_COST = days * Integer.parseInt(SelectRoom.getCostPerDay())+"";
+                    normalRoomActivity_tv_totalCost.setText("Total Cost: "+(TOTAL_COST +"$"));
+
+                }
             }
         };
 
@@ -166,11 +172,7 @@ public class NormalRoomActivity extends AppCompatActivity {
         datePicker.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         datePicker.show();
 
-        if(startDate != null && endDate != null){
-            long days = daysBetween();
-            TOTAL_COST = days * Integer.parseInt(SelectRoom.getCostPerDay())+"";
-            normalRoomActivity_tv_totalCost.setText("Total Cost: "+(TOTAL_COST +"$"));
-        }
+
     }
 
     private long daysBetween() {
